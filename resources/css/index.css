@@ -19,6 +19,15 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1} 
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ------------------------------------------*/
 /* Reusable Components */
 /* ------------------------------------------*/
@@ -94,6 +103,31 @@ h2:after {
     text-align: center;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 130%;
+    color: #e67e22;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+
+}
+/* LINKS */
+
+a:link, a:visited {
+    color:#e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s
+}
+a:hover, a:active {
+    color: #cf6d17;
+    border-bottom: 1px solid transparent;
+
+}
 
 /* Buttons */
 
@@ -236,4 +270,77 @@ section-features .long-copy {
 .meal-photo img:hover {
     opacity: 1;
     transform: scale(1.06);
+}
+
+/* ------------------------------------------*/
+/* How It Works */
+/* ------------------------------------------*/
+
+.section-steps {
+    background-color: rgb(248, 248, 248);
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+
+.steps-box:last-child {
+    padding-right: 3%;
+    margin-top: 70px;
+
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color:#e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 20px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border-bottom: none;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px
+}
+
+/* ------------------------------------------*/
+/* Cities*/
+/* ------------------------------------------*/
+
+
+
+.city-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
